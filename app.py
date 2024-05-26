@@ -14,8 +14,7 @@ os.environ["LANGCHAIN_API_KEY"]=os.getenv("LANGCHAIN_API_KEY")
 
 prompt=ChatPromptTemplate.from_messages(
     [
-        ("system","You are a helpful assistant. Please response to the user queries"),
-        ("user","Question:{question}")
+        ("{question}")
     ]
 )
 ## streamlit framework
